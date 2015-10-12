@@ -50,7 +50,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-
 html {
   background: #fff;
   color: #555;
@@ -97,6 +96,21 @@ a {
 img {
   max-width: 100%; 
 }
+
+small {
+  font-size: 75%;
+}
+figure {
+  max-width: 100%;
+  margin: 0;
+  margin: 1em 0;
+}
+.read-time {
+  color: #999;
+  font-style: italic;
+  margin: 1.5em 0 3em;
+}
+
 
 .wrapper {
   width: 90%;
@@ -360,12 +374,14 @@ header h1 {
   }
 }
 
-#project {
-  background: #eeeeee -webkit-gradient(linear, 50% 0%, 50% 600, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
-  background: #eeeeee -webkit-linear-gradient(#ffffff, #eeeeee 600px);
-  background: #eeeeee -moz-linear-gradient(#ffffff, #eeeeee 600px);
-  background: #eeeeee -o-linear-gradient(#ffffff, #eeeeee 600px);
-  background: #eeeeee linear-gradient(#ffffff, #eeeeee 600px); }
+#project .wrapper {
+  max-width: 800px;
+}
+
+#project .entry-header {
+  text-align: center;
+  margin-bottom: .5em;
+}
 
 .project_title {
   padding-bottom: 40px; 
