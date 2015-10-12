@@ -55,7 +55,11 @@ html {
   color: #555;
   font-size: 18px;
   line-height: 1.4;
-  font-family: sans-serif; 
+  font-family: sans-serif;
+}
+
+body {
+  font-family: 'Noticia Text', serif;
 }
 
 body { background: #fff; }
@@ -83,7 +87,7 @@ h2 {
 
 h3 {
   color: #555;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.4;
   font-weight: bold; }
 
@@ -141,7 +145,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  width: 25%;
+  width: 33.333333%;
   text-align: center; 
 }
 
@@ -173,6 +177,12 @@ nav a {
 @media (max-width: 440px) {
   nav { font-size: 14px; }
   nav a { padding: 20px 0; } 
+}
+
+.col-4 {
+  display: inline-block;
+  position: relative;
+  width: 24%;
 }
 
 #work .work,
@@ -207,7 +217,7 @@ header h1 {
   z-index: 2;
   top: 50%;
   margin-top: -18px;
-  font-size: 24px;
+  font-size: 2em;
   opacity: 0;
   transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -webkit-transform: translateY(40px);
@@ -286,6 +296,9 @@ header h1 {
 #process .wrapper {
   max-width: 1080px;
   font-size: 24px; 
+}
+#process .col-4 {
+  text-align: center;
 }
 
 
