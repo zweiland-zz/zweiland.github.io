@@ -74,12 +74,15 @@ blockquote p.quote {
   margin-bottom: .5rem;
   padding-top: 0.5em;
   font-style: italic; 
-  color: #3c578c;}
+  color: #000;}
 
 blockquote footer p {
   margin-bottom: 0;
   font-style: italic;
   font-size: 0.75em; }
+
+.left { float: left; }
+.right { float: right; }
 
 html {
   background: #fff;
@@ -118,7 +121,7 @@ h2 {
 
 h3 {
   color: #000;
-  font-size: 1em;
+  font-size: 1.25em;
   line-height: 1.4;
   font-weight: bold;
   margin: 1.625em 0 .625em;
@@ -126,7 +129,7 @@ h3 {
 
 h4 {
   color: #000;
-  font-size: 1.5em;
+  font-size: 1.625em;
   line-height: 1.4;
   font-weight: bold;
   font-family: "Colfax-Regular", sans-serif;
@@ -170,13 +173,14 @@ figure {
 .b-1 { margin-bottom: 1em; }
 .b-2 { margin-bottom: 2em; }
 
-.col-2, .col-4 {
+.col-2, .col-3, .col-4 {
   display: inline-block;
   position: relative;
   float: left;
 }
 
 .col-2 { width: 50%; }
+.col-3 { width: 30%; margin-right: 3.3333333%; }
 .col-4 { width: 25%; }
 
 
@@ -251,17 +255,18 @@ nav a {
 .button {
   display: inline-block;
   width: auto; height: auto;
-  padding: 1em 2.5em;
-  color: #fff;
-  background-color: #272727;
-  border-width: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1em;
-  font-weight: normal;
-  font-style: normal;
+  color: #222;
+  background-color: transparent;
+  border: 2px solid #222;
+  font-family: "Colfax-Regular", sans-serif;
+  font-size: .6725em;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0px;
+  letter-spacing: 4px;
+  padding: 21px 34px;
+  font-style: normal;
+  line-height: 1em;
+  text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -269,6 +274,12 @@ nav a {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.button:hover {
+  background: #222;
+  color: white;
 }
 
 #work .work,
@@ -364,29 +375,6 @@ header h1 {
   margin-bottom: 1em;
 }
 
-@media (max-width: 600px) {
-  .intro { padding-bottom: 40px; }
-  .intro h1 { font-size: 48px; }
-  .intro h2 { font-size: 24px; }
-  .projects li { margin-bottom: 20px; }
-  .projects h3 {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; 
-  }
-  .projects img { opacity: .3; }
-}
-
-@media (max-width: 440px) {
-  .intro { padding-bottom: 40px; }
-  .intro h1 { font-size: 30px; padding-bottom: 0px; }
-  .intro h2 { font-size: 18px; }
-  .projects li { margin-bottom: 15px; } 
-}
-
 #process .wrapper {
   max-width: 1080px;
   font-size: 24px; 
@@ -428,6 +416,10 @@ header h1 {
 }
 
 @media (max-width: 440px) {
+  header h1 {
+    padding-bottom: 0;
+  }
+
   #about .wrapper {
     width: 90%;
     font-size: 16px; 
@@ -554,7 +546,6 @@ header h1 {
 }
 
 figure {
-  padding-bottom: 80px;
   clear: both;
 }
 
@@ -616,6 +607,17 @@ figure:last-child { padding-bottom: 0; }
   }
   h1 { font-size: 48px; }
   h2 { font-size: 24px; }
+
+  blockquote { 
+    font-size: 1.25em;
+    background: none;
+    padding: 0;
+  }
+
+  .intro { padding-bottom: 40px; }
+  .intro h1 { font-size: 48px; }
+  .intro h2 { font-size: 24px; }
+  .projects li { margin-bottom: 20px; }
 }
 
 @media (max-width: 440px) {
@@ -625,7 +627,13 @@ figure:last-child { padding-bottom: 0; }
   }
   h1 { font-size: 30px; }
   h2 { font-size: 18px; }
-  h3 { font-size: 14px; } 
+  h3 { font-size: 14px; }
+
+
+  .intro { padding-bottom: 40px; }
+  .intro h1 { font-size: 30px; padding-bottom: 0px; }
+  .intro h2 { font-size: 18px; }
+  .projects li { margin-bottom: 15px; }  
 }
 
 @keyframes titleBounce {
