@@ -342,18 +342,18 @@ header h1 {
 .projects li:before {
   content: '';
   position: absolute;
-  background: black;
+  background: white;
   top: 0;
   bottom: 0;
   width: 100%;
   left: 50%;
   margin-left: -50%; 
 }
-/*
-.projects li:hover img {
-  opacity: .3;
-}
 
+.projects li:hover img {
+  opacity: .7;
+}
+/*
 .projects li:hover h3 {
   opacity: 1;
   -webkit-animation: titleBounce .4s ease;
