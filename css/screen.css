@@ -50,7 +50,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-em { font-style: italic; }
+b, strong { font-style: bold; }
+i, em { font-style: italic; }
 
 
 blockquote {
@@ -167,6 +168,7 @@ figure {
 }
 
 .text-center { text-align: center; }
+.text-right { text-align: right; }
 
 .t-1 { margin-top: 1em; }
 .t-2 { margin-top: 2em; }
@@ -225,6 +227,10 @@ nav a {
   display: block;
   padding: 40px 0;
   font-family: "Colfax-Regular", sans-serif;
+}
+
+.up-next {
+  padding: 0 0 5%;
 }
 
 .social {
@@ -305,53 +311,41 @@ header h1 {
   max-width: 600px; 
 }
 
-.projects h3 {
-  color: #fff;
-  position: absolute;
-  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  left: 50%;
-  width: 90%;
-  margin-left: -45%;
-  z-index: 2;
-  top: 50%;
-  margin-top: -18px;
-  font-size: 2em;
-  opacity: 0;
-  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  -webkit-transform: translateY(40px);
-  -moz-transform: translateY(40px);
-  -ms-transform: translateY(40px);
-  -o-transform: translateY(40px);
-  transform: translateY(40px);
-  height: 36px; 
+.projects a {
+  display: block;
+}
+
+.projects p {
+  font-family: "Colfax-Regular", sans-serif;
+  font-weight: 100;
+  font-size: 1.125em;
+  margin-top: 1em;
+  color: #777; 
+}
+
+.projects p strong {
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-right: 2%;
 }
 
 .projects img {
-  transition: all 0.15s;
   display: block;
   position: relative; 
+ -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 0.35s;
 }
 
 .projects li {
-  position: relative;
-  margin-bottom: 40px;
-  z-index: 1;
-  overflow: hidden; 
-}
-
-.projects li:before {
-  content: '';
-  position: absolute;
-  background: white;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  left: 50%;
-  margin-left: -50%; 
+  margin-bottom: 10%;
 }
 
 .projects li:hover img {
-  opacity: .7;
+ -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 /*
 .projects li:hover h3 {
