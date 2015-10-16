@@ -600,10 +600,10 @@ figure:last-child { padding-bottom: 0; }
   figure { padding-bottom: 30px; } 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   body {
     font-size: 16px;
-    line-height: 1.4; 
+    line-height: 1.4;
   }
   h1 { font-size: 48px; }
   h2 { font-size: 24px; }
@@ -612,6 +612,11 @@ figure:last-child { padding-bottom: 0; }
     font-size: 1.25em;
     background: none;
     padding: 0;
+  }
+
+  .button {
+    letter-spacing: 2px;
+    padding: 12px 10px;
   }
 
   .intro { padding-bottom: 40px; }
