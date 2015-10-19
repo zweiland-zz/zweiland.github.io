@@ -39,6 +39,11 @@ q:before, q:after, blockquote:before, blockquote:after {
   content: none;
 }
 
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
 a img {
   border: none; }
 
