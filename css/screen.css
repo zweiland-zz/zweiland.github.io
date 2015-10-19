@@ -50,7 +50,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-b, strong { font-style: bold; }
+b, strong { font-weight: bold; }
 i, em { font-style: italic; }
 
 
@@ -165,6 +165,7 @@ figure {
   font-style: italic;
   font-size: 75%;
   margin: 1.5em 0 3em;
+  line-height: 130%;
 }
 
 .text-center { text-align: center; }
