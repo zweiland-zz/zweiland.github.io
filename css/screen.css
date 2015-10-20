@@ -455,16 +455,6 @@ header h1 {
 
 #cv .wrapper { max-width: 640px; }
 
-#cv header {
-  text-align: left;
-  padding: 0 0 40px; 
-}
-
-#cv h1 {
-  padding: 0;
-  margin: 0;
-}
-
 #cv .section_title {
   color: #262626;
   padding-bottom: 10px;
@@ -490,6 +480,7 @@ header h1 {
 #cv section {
   padding-bottom: 20px; 
 }
+
 .cv-contact p {
   font-size: 24px;
   margin-bottom: .5em;
@@ -503,9 +494,6 @@ header h1 {
 }
 
 @media (max-width: 440px) {
-  #cv header {
-    padding: 0 0 20px; 
-  }
 }
 
 #project .wrapper {
