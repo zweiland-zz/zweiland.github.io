@@ -135,30 +135,34 @@ body, button, input, select, textarea {
 h1 {
   color: #000;
   font-size: 60px;
-  line-height: 1.2;
-  font-weight: bold; }
+  line-height: 1.25;
+  font-weight: bold;
+}
 
 h2 {
   color: #777;
   font-size: 30px;
-  line-height: 1.4; }
+  line-height: 1.4; 
+}
 
 h3 {
   color: #000;
   font-size: 1.25em;
   line-height: 1.4;
-  font-weight: bold;
+  font-weight: 100;
   margin: 1.625em 0 .625em;
+  font-weight: bold;
 }
 
 h4 {
   color: #000;
   font-size: 1.625em;
   line-height: 1.4;
-  font-weight: bold;
+  font-weight: 100;
   font-family: "Colfax-Bold", sans-serif;
   text-transform: uppercase;
   margin-bottom: .5em;
+  font-weight: lighter;
 }
 
 a {
