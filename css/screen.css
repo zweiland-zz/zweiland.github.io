@@ -653,6 +653,12 @@ figure:last-child { padding-bottom: 0; }
   h2 { font-size: 18px; }
   h3 { font-size: 16px; }
 
+  nav a { 
+    font-family: "Colfax-Regular";
+    font-weight: 100;
+    font-size: .875em;
+  }
+
   .intro { padding-bottom: 40px; }
   .intro h1 { font-size: 30px; padding-bottom: 0px; }
   .intro h2 { font-size: 18px; }
