@@ -171,10 +171,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-
-}
-
 img {
   max-width: 100%; 
 }
@@ -656,11 +652,6 @@ figure:last-child { padding-bottom: 0; }
   h1 { font-size: 30px; }
   h2 { font-size: 18px; }
   h3 { font-size: 16px; }
-
-  nav a { 
-    font-family: "Colfax-Regular";
-    font-weight: 100;
-  }
 
   .intro { padding-bottom: 40px; }
   .intro h1 { font-size: 30px; padding-bottom: 0px; }
