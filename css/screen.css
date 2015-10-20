@@ -495,13 +495,17 @@ header h1 {
   margin-bottom: .5em;
 }
 
+.last-line-cv {
+  display: block;
+  padding-top: .75em;
+  margin-top: .75em;
+  border-top: 1px dashed #eee;
+}
+
 @media (max-width: 440px) {
   #cv header {
     padding: 0 0 20px; 
   }
-}
-
-#project {
 }
 
 #project .wrapper {
