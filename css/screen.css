@@ -646,8 +646,12 @@ figure:last-child { padding-bottom: 0; }
   .intro { padding-bottom: 40px; }
   .intro h1 { font-size: 30px; padding-bottom: 0px; }
   .intro h2 { font-size: 18px; }
+  
   .projects li { margin-bottom: 3em; }
-  .projects p { font-size: 1em; margin-top: 1em; }
+  .projects p { 
+    font-size: 1em;
+    margin-top: 2em;
+  }
 }
 
 
