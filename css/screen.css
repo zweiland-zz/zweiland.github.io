@@ -473,7 +473,7 @@ header h1 {
   margin-bottom: .5em;
 }
 
-#cv li {
+#cv section li {
   padding-bottom: 2em; 
 }
 
@@ -494,6 +494,9 @@ header h1 {
 }
 
 @media (max-width: 440px) {
+  #cv header {
+    padding: 0 0 20px; 
+  }
 }
 
 #project .wrapper {
