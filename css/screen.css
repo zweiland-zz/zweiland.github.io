@@ -477,6 +477,14 @@ header h1 {
   margin-bottom: .5em;
 }
 
+.job-highlights {
+  list-style-type: disc;
+}
+
+.job-highlights li {
+  margin-bottom: 0;
+}
+
 .last-line-cv {
   display: block;
   padding-top: .75em;
