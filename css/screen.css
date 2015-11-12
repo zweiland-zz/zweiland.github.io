@@ -477,13 +477,13 @@ header h1 {
   margin-bottom: .5em;
 }
 
-.job-highlights {
+#cv .job-highlights {
   list-style-type: disc;
   margin-bottom: 0;
 }
 
-.job-highlights li {
-  margin-bottom: 0;
+#cv .job-highlights li {
+  padding-bottom: 0;
 }
 
 .last-line-cv {
