@@ -1,22 +1,3 @@
-@font-face {
-font-family:'Colfax-Regular';
-src:url(fonts/Colfax-Regular.eot);
-src:url(fonts/Colfax-Regular.eot?#iefix) format("embedded-opentype"),url(fonts/Colfax-Regular.woff) format("woff"),url(fonts/Colfax-Regular.ttf) format("truetype"),url(fonts/Colfax-Regular.svg#svgFontName) format("svg")
-}
-
-@font-face {
-font-family:'Colfax-Medium';
-src:url(fonts/Colfax-Medium.eot);
-src:url(fonts/Colfax-Medium.eot?#iefix) format("embedded-opentype"),url(fonts/Colfax-Medium.woff) format("woff"),url(fonts/Colfax-Medium.ttf) format("truetype"),url(fonts/Colfax-Medium.svg#svgFontName) format("svg")
-}
-
-@font-face {
-font-family:'Colfax-Bold';
-src:url(fonts/Colfax-Bold.eot);
-src:url(fonts/Colfax-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/Colfax-Bold.woff) format("woff"),url(fonts/Colfax-Bold.ttf) format("truetype"),url(fonts/Colfax-Bold.svg#svgFontName) format("svg")
-}
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -73,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
-b, strong { font-weight: bold; color: #484848; }
+b, strong { font-weight: bold; }
 i, em { font-style: italic; }
 
 
@@ -89,14 +70,13 @@ blockquote {
   transition: margin 100ms;
   background: url(../img/underline.png) center bottom no-repeat;
   padding-bottom: 1.875em;
-  font-family: "Colfax-Regular", sans-serif;
   }
 
 blockquote p.quote {
   text-indent: 0;
   margin-bottom: .5rem;
   padding-top: 0.5em;
-  font-style: italic; 
+  font-style: italic;
   color: #000;}
 
 blockquote footer p {
@@ -116,7 +96,7 @@ html {
 }
 
 body {
-  font-family: 'Noticia Text', serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 body { background: #fff; }
@@ -131,7 +111,7 @@ h1 {
 h2 {
   color: #777;
   font-size: 30px;
-  line-height: 1.4; 
+  line-height: 1.4;
 }
 
 h3 {
@@ -147,11 +127,9 @@ h4 {
   color: #000;
   font-size: 1.625em;
   line-height: 1.4;
-  font-weight: 100;
-  font-family: "Colfax-Bold", sans-serif;
+  font-weight: 900;
   text-transform: uppercase;
   margin-bottom: .5em;
-  font-weight: lighter;
 }
 
 a {
@@ -161,7 +139,7 @@ a {
 }
 
 img {
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 small {
@@ -207,42 +185,41 @@ figure {
 .wrapper {
   width: 90%;
   max-width: 1040px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 main {}
 
 .bold {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 nav {
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
 nav.header {
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 }
 
 nav.footer {
-  padding-top: 40px; 
+  padding-top: 40px;
 }
 
 nav ul {
   max-width: 600px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 nav li {
   display: inline-block;
   width: 33.333333%;
-  text-align: center; 
+  text-align: center;
 }
 
 nav a {
   display: block;
   padding: 40px 0;
-  font-family: "Colfax-Medium", sans-serif;
 }
 
 .up-next {
@@ -265,12 +242,12 @@ nav a {
 
 @media (max-width: 600px) {
   nav.header { padding-bottom: 20px; }
-  nav.footer { padding-top: 20px; } 
+  nav.footer { padding-top: 20px; }
 }
 
 @media (max-width: 440px) {
   nav { font-size: 14px; }
-  nav a { padding: 20px 0; } 
+  nav a { padding: 20px 0; }
 }
 
 .button {
@@ -279,9 +256,8 @@ nav a {
   color: #222;
   background-color: transparent;
   border: 2px solid #222;
-  font-family: "Colfax-Bold", sans-serif;
   font-size: .6725em;
-  font-weight: 600;
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 4px;
   padding: 21px 34px;
@@ -307,23 +283,23 @@ nav a {
 #about .about,
 #cv .cv,
 #process .process {
-  color: #777; 
+  color: #777;
 }
 
 header {
   width: 100%;
   text-align: center;
-  padding-bottom: 80px; 
+  padding-bottom: 80px;
 }
 
 header h1 {
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
 }
 
 .projects {
   text-align: center;
   margin: 0 auto;
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .projects a {
@@ -331,25 +307,23 @@ header h1 {
 }
 
 .projects p {
-  font-family: "Colfax-Regular", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 1em;
   margin-top: 2em;
-  color: #777; 
+  color: #777;
 }
 
 .projects p strong {
-  font-weight: 600;
-  color: #333;
+  font-weight: 800;
+  color: #000;
   text-transform: uppercase;
   display: inline-block;
   margin-right: 2%;
-  font-family: "Colfax-Bold", sans-serif;
 }
 
 .projects img {
   display: block;
-  position: relative; 
+  position: relative;
  -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transition: all 0.35s;
@@ -372,7 +346,7 @@ header h1 {
   -o-animation:titleBounce .4s ease;
   transform:
   -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards; 
+  -moz-animation-fill-mode: forwards;
   -ms-animation-fill-mode: forwards;
   -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -381,7 +355,7 @@ header h1 {
 .project-block {
   margin: 12.5% 0;
 }
-.project-block p, 
+.project-block p,
 .project-block li {
   margin-bottom: 1em;
 }
@@ -392,7 +366,7 @@ header h1 {
 
 #process .wrapper {
   max-width: 1080px;
-  font-size: 24px; 
+  font-size: 24px;
 }
 #process .col-4 {
   text-align: center;
@@ -405,7 +379,7 @@ header h1 {
 }
 
 #about h1 {
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -413,7 +387,7 @@ header h1 {
 
 .zak {
   display: block;
-  margin: 0 auto 80px; 
+  margin: 0 auto 80px;
 }
 
 @media (max-width: 600px) {
@@ -426,8 +400,8 @@ header h1 {
   }
   .zak {
     width: 200px;
-    margin-bottom: 40px; 
-  } 
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -437,23 +411,23 @@ header h1 {
 
   #about .wrapper {
     width: 90%;
-    font-size: 16px; 
+    font-size: 16px;
   }
   #about h1 {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 }
 
 #cv .wrapper { max-width: 640px; }
 
 #cv .section_title {
-  color: #262626;
+  color: #000;
   padding-bottom: 10px;
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 #cv h3 {
-  color: #262626;
+  color: #000;
   font-size: 1.125em;
   margin-top: .5em;
 }
@@ -465,11 +439,11 @@ header h1 {
 }
 
 #cv section li {
-  padding-bottom: 2em; 
+  padding-bottom: 2em;
 }
 
 #cv section {
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .cv-contact p {
@@ -495,7 +469,7 @@ header h1 {
 
 @media (max-width: 440px) {
   #cv header {
-    padding: 0 0 20px; 
+    padding: 0 0 20px;
   }
 }
 
@@ -511,27 +485,27 @@ header h1 {
 }
 
 .project_title {
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
 }
 
 .project_intro {
   margin: 0 auto 40px;
-  zoom: 1; 
+  zoom: 1;
 }
 
 .project_intro:before, .project_intro:after, .row:before, .row:after {
   content: '';
-  display: table; 
+  display: table;
 }
 
 .project_intro:after, .row:after {
-  clear: both; 
+  clear: both;
 }
 
 .project_intro .summary {
   float: left;
   width: 55%;
-  margin-right: 10%; 
+  margin-right: 10%;
 }
 
 .project_intro .summary p { padding-bottom: 1em; }
@@ -550,17 +524,17 @@ header h1 {
   }
   .zak {
     width: 200px;
-    margin-bottom: 40px; 
-  } 
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 440px) {
   #project .wrapper {
     width: 90%;
-    font-size: 16px; 
+    font-size: 16px;
   }
   #project h1 {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 }
 
@@ -579,7 +553,7 @@ figcaption {
   font-style: italic;
   padding: 30px 0 0;
   max-width: 70%;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 figure:last-child { padding-bottom: 0; }
@@ -593,22 +567,22 @@ figure:last-child { padding-bottom: 0; }
     padding-bottom: 40px; }
 
   figcaption {
-    max-width: 100%; } 
+    max-width: 100%; }
 }
 
 @media (max-width: 600px) {
   .project_intro {
-    margin: 0 auto 30px; 
+    margin: 0 auto 30px;
   }
   .project_intro .summary {
     float: none;
     width: 100%;
     margin: 0;
-    padding-bottom: 20px; 
+    padding-bottom: 20px;
   }
   .project_intro ul {
     width: 100%;
-    float: none; 
+    float: none;
   }
   figure { padding-bottom: 40px; }
 }
@@ -616,7 +590,7 @@ figure:last-child { padding-bottom: 0; }
 @media (max-width: 440px) {
   .project_title { padding-bottom: 20px; }
   .project_intro { margin: 0 auto 10px; }
-  figure { padding-bottom: 30px; } 
+  figure { padding-bottom: 30px; }
 }
 
 @media (max-width: 660px) {
@@ -627,7 +601,7 @@ figure:last-child { padding-bottom: 0; }
   h1 { font-size: 48px; }
   h2 { font-size: 24px; }
 
-  blockquote { 
+  blockquote {
     font-size: 1.25em;
     background: none;
     padding: 0;
@@ -646,7 +620,7 @@ figure:last-child { padding-bottom: 0; }
 @media (max-width: 440px) {
   body {
     font-size: 14px;
-    line-height: 1.4; 
+    line-height: 1.4;
   }
   h1 { font-size: 30px; }
   h2 { font-size: 18px; }
@@ -656,9 +630,9 @@ figure:last-child { padding-bottom: 0; }
   .intro { padding-bottom: 40px; }
   .intro h1 { font-size: 30px; padding-bottom: 0px; }
   .intro h2 { font-size: 18px; }
-  
+
   .projects li { margin-bottom: 3em; }
-  .projects p { 
+  .projects p {
     font-size: 1em;
     margin-top: 1em;
   }
